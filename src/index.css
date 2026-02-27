@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fredoka", sans-serif;
+  
+  --color-kitty-pink: #FFB7C5;
+  --color-kitty-dark: #FF8DA1;
+  --color-kitty-cream: #FFF5F7;
+  --color-kitty-brown: #5D4037;
+}
+
+@layer base {
+  body {
+    @apply bg-kitty-cream text-kitty-brown font-sans overflow-hidden;
+  }
+}
+
+@layer components {
+  .kitty-card {
+    @apply relative bg-white rounded-2xl shadow-lg border-2 border-kitty-pink flex items-center justify-center text-3xl font-bold transition-all duration-200 cursor-pointer hover:scale-105 active:scale-95;
+  }
+  
+  .kitty-btn {
+    @apply px-6 py-3 rounded-full font-bold transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg active:scale-95;
+  }
+  
+  .kitty-btn-primary {
+    @apply bg-kitty-pink text-white hover:bg-kitty-dark;
+  }
+  
+  .kitty-btn-secondary {
+    @apply bg-white text-kitty-pink border-2 border-kitty-pink hover:bg-kitty-cream;
+  }
+}
