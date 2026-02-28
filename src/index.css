@@ -13,13 +13,13 @@
 
 @layer base {
   body {
-    @apply bg-kitty-cream text-kitty-brown font-sans overflow-hidden;
+    @apply bg-kitty-cream text-kitty-brown font-sans;
   }
 }
 
 @layer components {
   .kitty-card {
-    @apply relative bg-white rounded-2xl shadow-lg border-2 border-kitty-pink flex items-center justify-center text-3xl font-bold transition-all duration-200 cursor-pointer hover:scale-105 active:scale-95;
+    @apply relative bg-white rounded-2xl shadow-lg border-2 border-kitty-pink flex items-center justify-center text-2xl md:text-3xl font-bold transition-all duration-200 cursor-pointer hover:scale-105 active:scale-95;
   }
   
   .kitty-btn {
